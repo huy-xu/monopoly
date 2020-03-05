@@ -4,32 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monopoly</title>
-    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <script
+      src="https://kit.fontawesome.com/bcf0e788dc.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="game__favicon"></div>
     <div class="game__container">
       <div class="game__box">
         <div class="way__square way__square-1">
-          <ion-icon name="airplane-outline" class="slot__icon"></ion-icon>
+          <!-- <ion-icon name="airplane-outline" class="slot__icon"></ion-icon> -->
+          <img
+            src="../data/icon/airplane.png"
+            alt="Plane Icon"
+            class="slot__icon--png"
+          />
         </div>
         <div class="way__square way__square-2">
-          <ion-icon name="hand-right-outline" class="slot__icon"></ion-icon>
+          <!-- <ion-icon name="hand-right-outline" class="slot__icon"></ion-icon> -->
+          <img
+            src="../data/icon/jail.png"
+            alt="Plane Icon"
+            class="slot__icon--png"
+          />
         </div>
         <div class="way__square way__square-3">
-          <ion-icon name="beer-outline" class="slot__icon"></ion-icon>
+          <!-- <ion-icon name="beer-outline" class="slot__icon"></ion-icon> -->
+          <img
+            src="../data/icon/handcuffs.png"
+            alt="Plane Icon"
+            class="slot__icon--png"
+          />
         </div>
         <div class="way__square way__square-4">
-          <ion-icon name="arrow-back-outline" class="slot__icon"></ion-icon>
+          <!-- <ion-icon name="arrow-back-outline" class="slot__icon"></ion-icon> -->
+          <img
+            src="../data/icon/start.png"
+            alt="Plane Icon"
+            class="slot__icon--png"
+          />
         </div>
 
         <div class="way__row way__row--top d-flex flex-row">
@@ -38,14 +70,14 @@
           </div>
           <div class="game__slot game__slot--top">
             <div class="slot__content">
-              <p class="slot__title">Huế</p>
+              <p class="slot__title">Hải Dương</p>
               <p class="slot__price">$3500</p>
             </div>
             <div class="slot__house">
               <div class="house"></div>
               <div class="house"></div>
-              <!-- <div class="house"></div>
-              <div class="house"></div> -->
+              <!-- <div class="house"></div> -->
+              <!-- <div class="house"></div> -->
             </div>
           </div>
           <div class="game__slot game__slot--top"></div>
@@ -101,7 +133,7 @@
               <div class="house"></div>
               <div class="house"></div>
               <div class="house"></div>
-              <div class="house"></div>
+              <!-- <div class="house"></div> -->
             </div>
           </div>
 
@@ -121,8 +153,8 @@
           <div class="game__slot game__slot--right">
             <div class="slot__house">
               <div class="house"></div>
-              <div class="house"></div>
-              <div class="house"></div>
+              <!-- <div class="house"></div> -->
+              <!-- <div class="house"></div> -->
               <!-- <div class="house"></div> -->
             </div>
             <div class="slot__content">
@@ -134,7 +166,51 @@
         </div>
 
         <div class="game__inf">
-          <ion-icon name="sunny-outline" class="game__icon"></ion-icon>
+          <!-- <ion-icon name="sunny-outline" class="game__icon"></ion-icon> -->
+          <div class="row player__container">
+            <div class="col-6 player__inf">
+              <h3 class="player__name">Huy Xu</h3>
+              <ion-icon name="person-sharp" class="player__icon"></ion-icon>
+              <h3 class="player__money">$10000</h3>
+            </div>
+
+            <!-- PLAYERS MONEY COMPONENT -->
+            <div class="col-6 players__money">
+              <div>
+                <span class="player__name">Huy Xu :</span>
+                <span class="player__money">$-1</span>
+              </div>
+              <div>
+                <span class="player__name">Nam Do :</span>
+                <span class="player__money">$10000</span>
+              </div>
+              <div>
+                <span class="player__name">Bui Duong :</span>
+                <span class="player__money">$2</span>
+              </div>
+              <div>
+                <span class="player__name">Another Name :</span>
+                <span class="player__money">$9000</span>
+              </div>
+            </div>
+            <!-- end of players component -->
+
+            <!-- GAME DICES -->
+            <div class="row game__dice">
+              <p>ROLE DICE HERE!</p>
+              <div>
+                <i class="fas fa-dice-six dice__icon"></i>
+                <i class="fas fa-dice-six dice__icon"></i>
+              </div>
+            </div>
+            <!-- end of game dices -->
+
+            <!-- game message component -->
+            <div class="game__message">
+              Game message HERE!
+            </div>
+            <!-- end of game message -->
+          </div>
         </div>
       </div>
     </div>
