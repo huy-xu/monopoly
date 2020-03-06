@@ -28,35 +28,35 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="game__favicon"></div>
-    <div class="game__container">
+    <!-- GAME FAVICON -->
+    <!-- <div class="game__favicon"></div> -->
+
+    <div class="game__container row">
+      <!-- GAME BOARD -->
       <div class="game__box">
-        <div class="way__square way__square-1">
-          <!-- <ion-icon name="airplane-outline" class="slot__icon"></ion-icon> -->
+        <!-- WAY SQUARE -->
+        <div class="way__square way__square-topleft">
           <img
             src="../data/icon/airplane.png"
             alt="Plane Icon"
             class="slot__icon--png"
           />
         </div>
-        <div class="way__square way__square-2">
-          <!-- <ion-icon name="hand-right-outline" class="slot__icon"></ion-icon> -->
-          <img
-            src="../data/icon/jail.png"
-            alt="Plane Icon"
-            class="slot__icon--png"
-          />
-        </div>
-        <div class="way__square way__square-3">
-          <!-- <ion-icon name="beer-outline" class="slot__icon"></ion-icon> -->
+        <div class="way__square way__square-topright">
           <img
             src="../data/icon/handcuffs.png"
             alt="Plane Icon"
             class="slot__icon--png"
           />
         </div>
-        <div class="way__square way__square-4">
-          <!-- <ion-icon name="arrow-back-outline" class="slot__icon"></ion-icon> -->
+        <div class="way__square way__square-bottomleft">
+          <img
+            src="../data/icon/jail.png"
+            alt="Plane Icon"
+            class="slot__icon--png"
+          />
+        </div>
+        <div class="way__square way__square-bottomright">
           <img
             src="../data/icon/start.png"
             alt="Plane Icon"
@@ -64,6 +64,7 @@
           />
         </div>
 
+        <!-- WAY ROW -->
         <div class="way__row way__row--top d-flex flex-row">
           <div class="game__slot game__slot--top slot__special--lucky">
             <ion-icon name="help-outline" class="slot__icon"></ion-icon>
@@ -118,6 +119,8 @@
           <!-- <div class="game__slot game__slot-bottom"></div> -->
           <!-- <div class="game__slot game__slot-bottom"></div> -->
         </div>
+
+        <!-- WAY COL -->
         <div class="way__col way__col--left">
           <!-- <div class="game__slot game__slot-left"></div> -->
           <div class="game__slot game__slot--left"></div>
@@ -165,16 +168,15 @@
           <div class="game__slot game__slot--right"></div>
         </div>
 
+        <!-- GAME INF -->
         <div class="game__inf">
-          <!-- <ion-icon name="sunny-outline" class="game__icon"></ion-icon> -->
           <div class="row player__container">
             <div class="col-6 player__inf">
               <h3 class="player__name">Huy Xu</h3>
               <ion-icon name="person-sharp" class="player__icon"></ion-icon>
               <h3 class="player__money">$10000</h3>
             </div>
-
-            <!-- PLAYERS MONEY COMPONENT -->
+            <!-- PLAYERS MONEY -->
             <div class="col-6 players__money">
               <div>
                 <span class="player__name">Huy Xu :</span>
@@ -193,24 +195,80 @@
                 <span class="player__money">$9000</span>
               </div>
             </div>
-            <!-- end of players component -->
-
-            <!-- GAME DICES -->
-            <div class="row game__dice">
-              <p>ROLE DICE HERE!</p>
-              <div>
-                <i class="fas fa-dice-six dice__icon"></i>
-                <i class="fas fa-dice-six dice__icon"></i>
-              </div>
-            </div>
-            <!-- end of game dices -->
-
-            <!-- game message component -->
-            <div class="game__message">
-              Game message HERE!
-            </div>
-            <!-- end of game message -->
           </div>
+          <!-- GAME DICES -->
+          <div class="row game__dice">
+            <p>ROLE DICE HERE!</p>
+            <div>
+              <i class="fas fa-dice-six dice__icon"></i>
+              <i class="fas fa-dice-six dice__icon"></i>
+            </div>
+          </div>
+          <!-- GAME MESSAGE -->
+          <div class="game__message">
+            Game message HERE!
+          </div>
+        </div>
+      </div>
+
+      <div class="game__sidebar">
+        <div class="slot__inf">
+          <div class="border--plus">
+            <div class="slot__name">Hải Dương</div>
+            <div class="line"></div>
+            <p>Giá mua ô đất <span class="price">$2500</span></p>
+            <p>
+              <i class="fas fa-home mr-1"></i>Giá xây 1 căn nhà
+              <span class="price">$1500</span>
+            </p>
+            <p>
+              <i class="fas fa-building mr-1"></i>Giá xây khách sạn<span
+                class="price"
+                >$1500</span
+              >
+            </p>
+            <div class="line"></div>
+            <p>Phí thu về từ ô đất<span class="price">$1500</span></p>
+            <p>Phí thu khi có 1 nhà<span class="price">$1500</span></p>
+            <p>Phí thu khi có 2 nhà<span class="price">$1500</span></p>
+            <p>Phí thu khi có 3 nhà<span class="price">$1500</span></p>
+            <p>Phí thu khi có 4 nhà<span class="price">$1500</span></p>
+            <p>Phí thu khi có khách sạn<span class="price">$1500</span></p>
+            <div class="line"></div>
+            <p class="owner__inf">
+              <i class="fas fa-user-check mr-1"></i>Owner:
+              <span class="owner__name">Nam Do</span>
+            </p>
+          </div>
+        </div>
+        <div class="game__history overflow-auto">
+          <p class="history__inf">
+            <i class="fas fa-user mr-1"></i>Dương muốn chia tay
+          </p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huy khóc</p>
+          <p class="history__inf">
+            <i class="fas fa-user mr-1"></i>Huy nài nỉ níu kéo Dương
+          </p>
+          <p class="history__inf">
+            <i class="fas fa-user mr-1"></i>Huy bị Dương tát vào mặt
+          </p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huy khóc!</p>
+          <p class="history__inf">
+            <i class="fas fa-user mr-1"></i>Dương có người yêu mới
+          </p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huy khóc!</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huy khóc!</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
+          <p class="history__inf"><i class="fas fa-user mr-1"></i>Huhuhuhu</p>
         </div>
       </div>
     </div>
