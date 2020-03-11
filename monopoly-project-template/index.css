@@ -46,41 +46,16 @@ p {
 }
 
 .game__box {
-  /* box-shadow: 5px -5px 49px 1px rgba(0, 0, 0, 0.46);
+  box-shadow: 5px -5px 49px 1px rgba(0, 0, 0, 0.46);
   width: 700px;
   height: 700px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid red;
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(14, 1fr);
-  position: relative; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 700px;
-  background-color: rgba(79, 78, 78, 0.8);
+  position: relative;
   display: grid;
   grid-template-columns: 100px repeat(8, 1fr) 100px;
   grid-template-rows: 100px repeat(8, 1fr) 100px;
-  z-index: 999;
-}
-
-.position__grid {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 700px;
-  background-color: rgba(79, 78, 78, 0.8);
-  display: grid;
-  grid-template-columns: 100px repeat(8, 1fr) 100px;
-  grid-template-rows: 100px repeat(8, 1fr) 100px;
-  z-index: 999;
 }
 
 /* GAME WAY SQUARE */
