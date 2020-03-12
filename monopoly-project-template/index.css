@@ -52,9 +52,10 @@ p {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid red;
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: 100px repeat(8, 1fr) 100px;
+  grid-template-rows: 100px repeat(8, 1fr) 100px;
 }
 
 /* GAME WAY SQUARE */
@@ -67,23 +68,23 @@ p {
 }
 
 .way__square-topleft {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .way__square-topright {
-  grid-column: 13 / 15;
-  grid-row: 1 / 3;
+  grid-column: 10 / 11;
+  grid-row: 1 / 2;
 }
 
 .way__square-bottomleft {
-  grid-column: 1 / 3;
-  grid-row: 13 / 15;
+  grid-column: 1 / 2;
+  grid-row: 10 / 11;
 }
 
 .way__square-bottomright {
-  grid-column: 13 / 15;
-  grid-row: 13 / 15;
+  grid-column: 10 / 11;
+  grid-row: 10 / 11;
 }
 
 /* GAME WAY ROW */
@@ -92,13 +93,13 @@ p {
 }
 
 .way__row--top {
-  grid-column: 3 / 13;
-  grid-row: 1 / 3;
+  grid-column: 2 / 10;
+  grid-row: 1 / 2;
 }
 
 .way__row--bottom {
-  grid-column: 3 / 13;
-  grid-row: 13 / 15;
+  grid-column: 2 / 10;
+  grid-row: 10 / 11;
 }
 
 /* GAME WAY TOP */
@@ -107,13 +108,13 @@ p {
 }
 
 .way__col--left {
-  grid-column: 1 / 3;
-  grid-row: 3 / 13;
+  grid-column: 1 / 2;
+  grid-row: 2 / 10;
 }
 
 .way__col--right {
-  grid-column: 13 / 15;
-  grid-row: 3 / 13;
+  grid-column: 10 / 11;
+  grid-row: 2 / 10;
 }
 
 /* GAME SLOT */
@@ -163,8 +164,8 @@ p {
 
 /* GAME INF */
 .game__inf {
-  grid-column: 3 / 13;
-  grid-row: 3 / 13;
+  grid-column: 2 / 10;
+  grid-row: 2 / 10;
   background-color: #dedede;
   color: #525252;
   padding: 15px;
