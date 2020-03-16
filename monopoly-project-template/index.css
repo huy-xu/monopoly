@@ -25,6 +25,60 @@ p {
   margin: 3px 0;
 }
 
+/* PLAYERS */
+.tmp {
+  border: 1px solid red;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  grid-column: 2 / 10;
+  grid-row: 1 / 2;
+  z-index: 998;
+}
+
+.game__player {
+  width: 15px;
+  height: 15px;
+  z-index: 999;
+  position: absolute;
+}
+
+.game__player--1 {
+  background-color: #525252;
+  top: 18px;
+  left: 20px;
+  grid-column: 2 / 10;
+  grid-row: 1 / 2;
+}
+
+.game__player--2 {
+  background-color: #a56cc1;
+  top: 18px;
+  left: 40px;
+  grid-column: 2 / 10;
+  grid-row: 1 / 2;
+}
+
+.game__player--3 {
+  background-color: green;
+  top: 38px;
+  left: 20px;
+  grid-column: 2 / 10;
+  grid-row: 1 / 2;
+}
+
+.game__player--4 {
+  background-color: red;
+  top: 38px;
+  left: 40px;
+  grid-column: 2 / 10;
+  grid-row: 1 / 2;
+}
+
+/* END OF GAME PLAYERS */
+
 .game__favicon {
   width: 200px;
   height: 200px;
